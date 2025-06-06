@@ -45,14 +45,16 @@
         <label for="dokter">Dokter Spesialis</label>
           <select class="form-control" name="dokter" id="dokter" required>
             <option value="">-- Pilih dokter --</option>
-            <option value="Internis">Internis</option>
-            <option value="Pediatri">Pediatri</option>
-            <option value="Neurologi">Neurologi</option>
-            <option value="Kardiologi">Kardiologi</option>
-            <option value="Oftalmologi">Oftalmologi</option>
-            <option value="Ortodonti">Ortodonti</option>
-            <option value="Ortopedi">Ortopedi</option>
+            <option value="Penyakit Dalam">Penyakit Dalam</option>
+            <option value="Saraf">Saraf</option>
+            <option value="Paru-paru">Paru-paru</option>
+            <option value="Jantung">Jantung</option>
+            <option value="Penyakit Dalam">Penyakit Dalam</option>
             <option value="Bedah Umum">Bedah Umum</option>
+            <option value="Kulit Kelamin">Ortopedi</option>
+            <option value="Mata">Mata</option>
+            <option value="THT">THT</option>
+            <option value="Psikiatri">Psikiatri</option>
           </select>
           </div>
 
