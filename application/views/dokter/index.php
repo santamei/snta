@@ -31,7 +31,7 @@
         </div>
         <div class="card-body">
           <a href="<?= base_url('dokter/tambah');?>" class="btn btn-primary mb-3">Tambah dokter</a>
-          <?php if (!empty($dokter_pasien)): ?>
+          <?php if (!empty($dokter)): ?>
             <table class="table table-bordered table-striped">
               <thead>
                 <tr>
@@ -40,7 +40,7 @@
                 </tr>
               </thead>
               <tbody>
-                <?php foreach($dokter_pasien as $b): ?>
+                <?php foreach($dokter as $b): ?>
                   <tr>
                     
                     <td><?= $b['dokter']; ?></td>

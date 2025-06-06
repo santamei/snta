@@ -30,12 +30,12 @@
           </div>
         </div>
         <div class="box-body">
-            <form action="<?= base_url('dokter/update/'. $dokter_pasien['iddokter']);?>" method="POST">
+            <form action="<?= base_url('dokter/update/'. $dokter['iddokter']);?>" method="POST">
             <div class="box-body">
                 
                 <div class="form-group">
                     <label for="dokter">Dokter Spesialis</label>
-                    <input type="text" class="form-control" name="dokter" value="<?= $dokter_pasien['dokter']; ?>" id="dokter" placeholder="dokter" required>
+                    <input type="text" class="form-control" name="dokter" value="<?= $dokter['dokter']; ?>" id="dokter" placeholder="dokter" required>
                 </div>
                 
             </div>

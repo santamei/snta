@@ -10,13 +10,13 @@ class Dokter extends MY_Controller {
     }
 
     public function index() {
-        $data['dokter_pasien'] = $this->Dokter_model->get_all_dokter();
+        $data['dokter'] = $this->Dokter_model->get_all_dokter();
         $this->load->view('templates/header');
         $this->load->view('dokter/index', $data);
         $this->load->view('templates/footer');
     }
     public function tambah(){
-        $data['dokter_pasien']=$this->Dokter_model->get_all_dokter();
+        $data['dokter']=$this->Dokter_model->get_all_dokter();
         $this->load->view('templates/header');
         $this->load->view('dokter/form_dokter', $data);
         $this->load->view('templates/footer');
@@ -41,7 +41,7 @@ class Dokter extends MY_Controller {
         redirect('dokter');
     }
     public function edit($iddokter){
-        $data['dokter_pasien']=$this->Dokter_model->get_dokter_by_id($iddokter);
+        $data['dokter']=$this->Dokter_model->get_dokter_by_id($iddokter);
         $this->load->view('templates/header');
         $this->load->view('dokter/edit_dokter',$data);
         $this->load->view('templates/footer');
