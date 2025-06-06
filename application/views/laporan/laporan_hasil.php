@@ -36,7 +36,7 @@
 
                 <div class="table-responsive">
                     <table id="datatable" class="table table-bordered table-striped">
-                        <thead class="thead-dark">
+                        <thead class="maroon">
                             <tr>
                                 <th>No</th>
                                 <th>Nama</th>
