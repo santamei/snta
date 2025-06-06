@@ -24,7 +24,6 @@
         </h3>
         <div class="card-tools">
           <?php if ($this->session->userdata('role') == 'admin'): ?>
-            <button id="btnPrint" class="btn btn-success btn-sm mr-2">Print</button>
           <?php endif; ?>
           <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
           <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
@@ -62,7 +61,7 @@
                     <a href="<?= base_url('pasien/hapus/'. $b['idpasien']); ?>" class="btn btn-sm btn-danger" onclick="return confirm('Apakah anda yakin hapus?')">Hapus</a>
 
                     <?php if ($this->session->userdata('role') == 'admin') : ?>
-                      <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#modalEdit<?= $b['idpasien']; ?>">Edit Status</button>  
+                      <button class="btn btn-dark btn-sm" data-toggle="modal" data-target="#modalEdit<?= $b['idpasien']; ?>">Edit Status</button>  
                     <?php endif; ?>
                   </td>
                 </tr>
