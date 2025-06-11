@@ -12,9 +12,9 @@ class Auth extends CI_Controller{
         // this->load->view('templates/footer');
     }
     public function register(){
-        $this->load->view('templates/header');
+       // $this->load->view('templates/header');
         $this->load->view('auth/register');
-        $this->load->view('templates/footer');
+       // $this->load->view('templates/footer');
     }
     public function process_register(){
         $this->form_validation->set_rules('username','username','required|is_unique[users.username]');
@@ -23,9 +23,9 @@ class Auth extends CI_Controller{
         $this->form_validation->set_rules('role','role','required');
 
         if($this->form_validation->run() == FALSE){
-            $this->load->view('templates/header');
+            //$this->load->view('templates/header');
             $this->load->view('auth/register');
-            $this->load->view('templates/footer');
+            //$this->load->view('templates/footer');
         }else{
             $data =[
                 'username'=> $this->input->post('username'),
